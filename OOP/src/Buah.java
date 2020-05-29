@@ -1,14 +1,20 @@
 package OOP.src;
 
+import java.util.ArrayList;
+
 public class Buah {
     private String nama;
     private int harga;
     private int stock;
 
+    public ArrayList<Buah> listBuah = new ArrayList<Buah>();
+
     public Buah(String nama, int harga, int stock) {
         setNama(nama);
         setHarga(harga);
         setStock(stock);
+
+        // listBuah.add(new Buah(nama,harga,stock));
     }
 
     public String getNama() {
